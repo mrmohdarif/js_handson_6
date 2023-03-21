@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h2>1."We are interested in retrieving only the students' names; all the names should be in caps.
+
+    ['JOHN', 'BABA', 'YAGA', 'WICK']"</h2>
+    <p>Answear</p>
+    <pre>
+        let studentRecords = 
+   [  
+         {name: 'John', id: 123, marks : 98 },
+          {name: 'Baba', id: 101, marks : 23 },
+          {name: 'yaga', id: 200, marks : 45 },
+          {name: 'Wick', id: 115, marks : 75 }
+   ]
+    </pre>
+ <pre>for(i=0;i<StudentRecords.length;i++)</pre>
+<pre>
+    {
+        let stuname=studentRecords[i].name
+        console.log(stuname.toUpperCase());
+    }
+</pre>
+
+<h2>2."Suppose we have the same dataset as above but this time we want to get the details of students who scored more than 50 marks.
+
+    [{name: 'John', id: 123, marks: 98 },{name: 'Wick', id: 115, marks: 75 }]"</h2>
+
+    <p>Answer</p>
+    <pre>
+        for(i=0;i<studentRecords.length;i++)
+        <pre>
+{
+    let markof=studentRecords[i].marks
+      if(markof>50)
+   {
+    console.log(studentRecords[i])
+  } 
+</pre>      
+}
+    </pre>
+
+    <h2>3.Retrieve the details of students who scored more than 50 marks and have IDs greater than 120.</h2>
+      <p>Answer</p>
+      <pre>
+        for(i=0;i<studentRecords.length;i++)</pre>
+      <pre>
+        {
+            let markof=studentRecords[i].marks;
+            let stuId=studentRecords[i].id;
+            if(markof>50 && stuId>120)
+            {
+                console.log(studentRecords[i])
+            }
+        }
+      </pre>
+      <h2>4.Consider the same scenario we have discussed above, but this time we would like to know the sum total of the marks of the students.</h2>
+      <p>Answear:-</p>
+      <pre>
+        let total=0;
+   for(i=0;i<studentRecords.length;i++)
+   <pre>
+    {
+
+   total=total+studentRecords[i].marks;  
+   }
+  console.log(total);
+</pre>
+      </pre>
+
+
+      <h2>5.This time we want to get only the names of the students who scored more than 50 marks from the same dataset used above.</h2>
+    <p>for(i=0;i<studentRecords.length;i++)</p>
+    <pre>
+        {
+            number=studentRecords[i].marks;
+          if(number>50)
+           console.log(studentRecords[i].name)  
+        }
+    </pre>
+    
+    <h2>6.This time we are required to print the sum of marks of the students with id > 120.</h2>
+    <p>Answerar:</p>
+    <p>let total_id=0;</p>
+    <p>for(i=0;i<studentRecords.length;i++)</p>
+    <pre>
+        {
+            number_id=studentRecords[i].id;
+        
+           if(number_id>120)
+           {
+            total_id=total_id+studentRecords[i].marks; 
+           }
+        }
+        console.log(total_id)
+    </pre>
+     <h2>8.Create 6 objects , each object will have name, class, roll no as properties. Store these objects in an array of objects. </h2>
+     <pre>
+        arryOfobject=[
+    
+    {name: 'John', class: 'BCA', Roll_no : 98 },
+    {name: 'Baba', class: 'Bsc', Roll_no : 23 },
+    {name: 'yaga', class: 'B Tech', Roll_no : 45 },
+    {name: 'Wick', class: 'Msc', Roll_no : 75 }
+    {name: 'Mohd arif', class: 'M A', Roll_no : 45 },
+    {name: 'laboni', class: 'M Tech', Roll_no : 75 }
+]
+console.log(arryOfobject);
+     </pre>
+     <h2> 7.This time we are required to print the total marks of the students with marks greater than 50 after a grace of 15 marks has been added to those students who scored less than 50.</h2>
+      <p>Answear</p>
+     <pre>
+        greaterthan=0;
+lessthan=0;
+for(i=0;i<studentRecords.length;i++)
+{
+  if(studentRecords[i].marks>50)
+  {
+    greaterthan=greaterthan+studentRecords[i].marks; 
+  } 
+  else if(studentRecords[i].marks<50) 
+  {
+    lessthan=lessthan+studentRecords[i].marks+15;
+  }  
+}
+console.log(greaterthan+lessthan);
+     </pre>
+    <script src="script.js"></script>
+</body>
+</html>
